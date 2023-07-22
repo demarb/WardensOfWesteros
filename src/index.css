@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  
+}
+
+/* Home */
+.home{
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: rgba(0, 0, 255, 0.541); */
+  background-position-y: -15vh;
+  height: 100vh;
+}
+
+.overlay{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.home h1{
+  font-size: 4.5rem;
+  
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home h2{
+  font-size: 2.0rem;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home button{
+  margin-top: 10px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 200px; */
+  width: max-content;
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: solid white 1px;
+  color: white;
+  padding: 15px;
+}
+
+.home button a{
+  font-size: 1.6rem;
+  color: white;
+  /* border: solid red 1px; */
+  padding: 15px 30px;
+  /* width: 200px; */
+}
+
+.home button:hover{
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+/* Nav */
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+
+  background-color: #3A4652;
+  color: white;
+}
+
+nav h1{
+  font-size: 2.5rem;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+nav ul li a{
+  font-size: 2rem;
+  color: white;
+}
+
+.active{
+  text-decoration: underline 2px;
+}
+
+
+/* Characters Render */
+.characters-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0px 100px;
+
+
+  /* background-image: url("./assets/background.jpg"); */
+  /* background-size: cover; */
+  /* background-repeat:repeat-x; */
+  /* background-color: rgba(0, 0, 255, 0.541); */
+  /* background-position-y: -15vh; */
+  /* height: 100vh; */
+}
+
+.characters-grid-item{
+  flex: 0 0 25%;
+  /* background-color: white; */
+  /* display: inline-block; */
+}
+
+.characters-grid-item:hover{
+  filter: brightness(50%);
+  cursor: pointer; 
+}
+
+.characters-section img{
+  /* width: 250px; */
+
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  display: block; /* Remove any residual spacing */
+
+  
+}
