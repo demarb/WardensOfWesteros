@@ -1,29 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Nav from "../components/Nav";
 import { useNavigate } from "react-router-dom";
+import CharacterContext from "../components/CharacterContext";
 
 export default function Characters(){
 
-    //States
-    const [charactersData, setCharactersData] = useState([])
-
-    //Effects
-    useEffect(()=>{
-        const apiCall = async()=>{
-            const res = await fetch("https://thronesapi.com/api/v2/Characters")
-            const res_json = await res.json()
-            setCharactersData(res_json)
-            console.log(charactersData)
-        }
-
-        apiCall();
-        
-    }, [])
     
+    //Navigates
     const navigate = useNavigate()
 
-    
-    //Function
+    //useContexts
+    const {charactersData, setCharactersData} = useContext(CharacterContext)
+
+
+    //Functions
         function clickCharacter(id){
             console.log(`ID CLICKED WAS ${id}`)
             

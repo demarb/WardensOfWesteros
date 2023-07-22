@@ -132,7 +132,11 @@ nav ul li a{
   /* width: 250px; */
 
   width: 100%; /* Ensure the image takes up the full width of its container */
-  display: block; /* Remove any residual spacing */
+  display: block; /* Remove any residual spacing */ 
+}
 
-  
+
+/* Indidual Character Styling */
+.character{
+  margin: 0px 100px;
 }
