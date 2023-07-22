@@ -1,7 +1,8 @@
 import { useEffect } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Nav from "../components/Nav";
 
-export function NotFound(){
+export default function NotFound(){
 
     //useNavigateHook
     const navigate = useNavigate()
@@ -9,9 +10,18 @@ export function NotFound(){
     useEffect(()=>{
         setTimeout(()=>{
             navigate("/") 
-        },3000)
+        }, 5000)
     }, [])
     
-    return <h1>Page Not Found</h1>
+    return (
+        <>
+            <Nav/>
+            <section className="notFound">
+                <h1>PAGE NOT FOUND</h1>
+            </section>
+        </>
+    
+    
+    )
 
 }

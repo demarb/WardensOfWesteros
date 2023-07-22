@@ -18,22 +18,17 @@ export default function Characters(){
             console.log(`ID CLICKED WAS ${id}`)
             
             navigate(`/characters/${id}`)
-        }
-
-        
+        }  
 
     //Renders
     const charactersRender = charactersData.map((character)=>{
         return (
             <div key={character.id} className="characters-grid-item" onClick={()=>clickCharacter(character.id)}>
-                {/* <img onClick={clickCharacter} src={character.imageUrl}></img> */}
                 <img  src={character.imageUrl}></img>
-                {/* <button>More</button> */}
             </div>
         )
     })
 
-    
 
     return (
         <>

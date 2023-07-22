@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from "react";
+import { useContext } from "react";
 import Nav from "../components/Nav";
 import CharacterContext from "../components/CharacterContext";
 import { useParams } from "react-router-dom";
@@ -10,22 +10,37 @@ export default function CharacterDetails(){
 
     const {id} = useParams()
 
-    //
+    //Functions
     const selectedCharacter = charactersData.find((character)=>character.id == id)
-    console.log(selectedCharacter)
     
 
     return (
         <>
             <Nav/>
-            <section className="character">
-                <h1>CHARACTER DETAILS</h1>
-                <h2>ID : {id}</h2>
-                <img src={selectedCharacter.imageUrl}></img>
-            </section>
-            
 
-            
+            { selectedCharacter ?
+
+                <section className="character">
+
+                    <img src={selectedCharacter.imageUrl}></img>
+                    <div className="character-about">
+                        <h1 className="character-name">Full Name : {selectedCharacter.fullName}</h1>
+                        <h2 className="character-title">Title : {selectedCharacter.title}</h2>
+                        <h2 className="character-family">Family : {selectedCharacter.family}</h2>
+
+                    </div>
+                    
+                    
+                </section>
+
+                :
+
+                <section className="character">
+                    <h1>CHARACTER DOES NOT EXIST</h1>
+                </section>
+
+            }
+
         </>
         
     )

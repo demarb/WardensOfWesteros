@@ -9,7 +9,6 @@ export default function Home(){
                 <h1>Wardens of Westeros</h1>
                 <h2>Find Game of Thrones Characters</h2>
                 <button><Link to="/characters"> See Characters </Link></button>
-                {/* <Link to="/characters"><button> See Characters </button></Link> */}
             </div>
             
         </section>
