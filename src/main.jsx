@@ -7,12 +7,12 @@ import { BrowserRouter, HashRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
 
-      {/* <HashRouter basename="/WardensOfWesteros/"> */}
+      <HashRouter>
         <App />
-      {/* </HashRouter> */}
+      </HashRouter>
       
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
   </React.StrictMode>,
 )
