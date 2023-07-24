@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
 
-      <HashRouter basename="/">
+      <HashRouter basename="/WardensOfWesteros/">
         <App />
       </HashRouter>
       
