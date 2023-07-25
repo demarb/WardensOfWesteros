@@ -1,5 +1,5 @@
 # Wardens of Westeros
-Available at: https://demarb.github.io/WardensOfWesteros
+Available at: https://wardensofwesteros.netlify.app/#/
 
 ## Project Overview:
 Wardens of Westeros is a tool for identifying over 50 of the most common Game of Thrones characters.
