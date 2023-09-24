@@ -11,3 +11,6 @@ Find the full name, title, and family of the selected character.
 
 ### API Used:
 https://thronesapi.com/
+
+### Preview:
+![Preview app](./preview.png)
